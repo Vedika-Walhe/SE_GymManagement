@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Member to Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="assign.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Assign Member to Training</h2>
+        <form id="assign-form">
+            <label for="memberSelect">Select Member:</label>
+            <select id="memberSelect" name="memberSelect" required>
+                <option value="">--Select Member--</option>
+                <option value="Alice">Alice</option>
+                <option value="Bob">Bob</option>
+                <option value="Charlie">Charlie</option>
+                <option value="Daisy">Daisy</option>
+            </select><br><br>
+
+            <label for="trainerSelect">Select Trainer:</label>
+            <select id="trainerSelect" name="trainerSelect" required>
+                <option value="">--Select Trainer--</option>
+                <option value="John">John</option>
+                <option value="Emma">Emma</option>
+                <option value="Michael">Michael</option>
+                <option value="Sophia">Sophia</option>
+            </select><br><br>
+
+            <button type="submit">Assign Training</button>
+        </form>
+
+        <!-- Confirmation Section -->
+        <div id="confirmation" class="confirmation" style="display:none;">
+            <h3>Training Assigned Successfully!</h3>
+            <p id="summary"></p>
+            <button onclick="resetForm()">Assign Another Training</button>
+        </div>
+    </div>
+</body>
+</html>

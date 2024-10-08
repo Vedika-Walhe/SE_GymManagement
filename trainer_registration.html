@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="trainer.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Trainer Registration</h2>
+        <form id="trainer-form">
+            <label for="trainerName">Trainer Name:</label>
+            <input type="text" id="trainerName" name="trainerName" required><br><br>
+
+            <label for="trainerEmail">Email:</label>
+            <input type="email" id="trainerEmail" name="trainerEmail" required><br><br>
+
+            <label for="trainerPhone">Phone Number:</label>
+            <input type="text" id="trainerPhone" name="trainerPhone" required><br><br>
+
+            <label for="trainerSpecialty">Specialty:</label>
+            <input type="text" id="trainerSpecialty" name="trainerSpecialty" required><br><br>
+
+            <button type="submit">Register Trainer</button>
+        </form>
+
+        <!-- Confirmation Section -->
+        <div id="confirmation" class="confirmation" style="display:none;">
+            <h3>Trainer Registered Successfully!</h3>
+            <p id="summary"></p>
+            <button onclick="resetForm()">Register Another Trainer</button>
+        </div>
+    </div>
+</body>
+</html>
